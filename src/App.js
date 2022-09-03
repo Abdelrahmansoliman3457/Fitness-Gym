@@ -9,9 +9,11 @@ import Trainers from "./pages/Trainers";
 import Notfound from "./pages/Notfound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route index  element={<Home />}/>
